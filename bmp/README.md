@@ -1,18 +1,17 @@
-# Vrijestudent
+# bmp copy and resize
 
-A news site with a cms.    
+a c script to copy or resize .bmp file  
 
-### Installation
-
-You need Python, Pip and Virtualenv installed globally:
+### Copy bmp
 
 ```sh
-$ git clone https://github.com/ayegemen/vrije.git
-$ cd vrije
-$ virtualenv env
-$ source env/bin/activate
-(env)$ pip install -r requirements.txt
-(env)$ python manage.py migrate
-(env)$ python manage.py loaddata initial_data.json
-(env)$ python manage.py runserver
+$ make copy
+$ ./copy infile outfile
+```
+
+### Resize bmp
+
+```sh
+$ make resize
+$ ./resize n infile outfile
 ```
